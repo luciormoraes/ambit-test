@@ -1,0 +1,30 @@
+{
+  "name": "refactionjs",
+  "version": "1.0.0",
+  "description": "Refactoring exercise for Node",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon -w --exec \"babel-node src --presets env\"",
+    "build": "rimraf dist && babel -s -D -d dist --presets env",
+    "start": "node build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.dev.xero.com/gareth-cronin/refactionjs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.15.3",
+    "faker": "^4.1.0",
+    "lodash": "^4.17.10",
+    "morgan": "^1.9.1",
+    "nedb": "^1.8.0",
+    "nodemon": "^1.19.0",
+    "rimraf": "^2.6.3"
+  }
+}
